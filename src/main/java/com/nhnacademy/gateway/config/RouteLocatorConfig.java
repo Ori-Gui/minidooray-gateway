@@ -37,9 +37,9 @@ public class RouteLocatorConfig {
                         p->p.path("/members/**").and()
                         .uri("lb://ACCOUNT-SERVICE")
                 )
-                .route("project-service",
+                .route("task-service",
                         p->p.path("/projects/**").and()
-                                .uri("lb://PROJECT-SERVICE")
+                                .uri("lb://TASK-SERVICE")
                 )
                 .build();
 
